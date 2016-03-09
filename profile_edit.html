@@ -33,42 +33,46 @@
 
                         <!-- sidebar title -->
                             <div class="navbar nav_title" style="border: 0;">
-                                <a href="index.html" class="site_title"><i class="fa fa-users"></i> <span>Cross Device Tracking</span></a>
+                                <a class="site_title"><i class="fa fa-users"></i> <span>Cross Device Tracking</span></a>
                             </div>
                             <div class="clearfix"></div>
                             <br />
                         <!-- /sidebar title -->
 
                         <!-- sidebar menu -->
-                        <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
 
-                            <div class="menu_section">
-                                <ul class="nav side-menu">
-                                    <li><a><i class="fa fa-home" href="index3.html"></i> Home </a>
-                                    </li>
-                                    <li><a><i class="fa fa-bar-chart-o" ></i> Reports <span class="fa fa-chevron-down"></span></a>
-                                        <ul class="nav child_menu" style="display: none">
-                                            <li><a href="form.html">Visitor Statistics</a>
-                                            </li>
-                                            <li><a href="form_advanced.html">Website / Mobile App Statistics</a>
-                                            </li>
-                                            <li><a href="form_wizards.html">Unique Patterns</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a><i class="fa fa-table"></i> Data <span class="fa fa-chevron-down"></span></a>
-                                        <ul class="nav child_menu" style="display: none">
-                                            <li><a href="form.html">Upload Dataset</a>
-                                            </li>
-                                            <li><a href="form_advanced.html">Collect Online</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a><i class="fa fa-laptop"></i> Support </a>
-                                    </li>
-                                </ul>
+                                <div class="menu_section">
+                                    <ul class="nav side-menu">
+                                        <li><a><i class="fa fa-home" ></i> Dashboard <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="index.html">Home</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a><i class="fa fa-bar-chart-o" ></i> Reports <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="form.html">Visitor Statistics</a>
+                                                </li>
+                                                <li><a href="form_advanced.html">Website / Mobile App Statistics</a>
+                                                </li>
+                                                <li><a href="form_wizards.html">Unique Patterns</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a><i class="fa fa-table"></i> Data <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="form.html">Upload Dataset</a>
+                                                </li>
+                                                <li><a href="form_advanced.html">Collect Online</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a><i class="fa fa-laptop"></i> Support </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
                         <!-- /sidebar menu -->
 
                         <!-- /menu footer buttons -->
@@ -107,7 +111,7 @@
                                         <span class=" fa fa-angle-down"></span>
                                     </a>
                                     <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
-                                        <li><a href="javascript:;">  Profile</a>
+                                        <li><a href="profile.html">  Profile</a>
                                         </li>
                                         <li>
                                             <a href="javascript:;">
@@ -203,73 +207,115 @@
             <!-- /top navigation -->
 
             <!-- page content -->
-            <div class="right_col" role="main">
-                <div class="">
-                    <div class="row">
-                        <!-- start of network activities -->
+                <div class="right_col" role="main">
+
+                    <div class="">
+                        <div class="page-title">
+                            <div class="title_left">
+                                <h3>
+                                    Edit Profile
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="dashboard_graph x_panel">
-                                    <div class="row x_title">
-                                        <div class="col-md-6">
-                                            <h3>Web Traffic</h3>
-                                        </div>
-                                    </div>
+                                <div class="x_panel">
                                     <div class="x_content">
-                                        <div class="demo-container" style="height:250px">
-                                            <div id="placeholder3xx3" class="demo-placeholder" style="width: 100%; height:250px;"></div>
-                                        </div>
+                                        <!-- start edit form -->
+                                            <form class="form-horizontal form-label-left" novalidate>
+                                            
+                                                <span class="section">Personal Info</span>
+                                                <div class="item form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Name <span class="required">*</span>
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="name" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="both name(s) e.g Jon Doe" required="required" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="item form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Email <span class="required">*</span>
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input type="email" id="email" name="email" required="required" class="form-control col-md-7 col-xs-12">
+                                                    </div>
+                                                </div>
+                                                <div class="item form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Confirm Email <span class="required">*</span>
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input type="email" id="email2" name="confirm_email" data-validate-linked="email" required="required" class="form-control col-md-7 col-xs-12">
+                                                    </div>
+                                                </div>
+                                                <div class="item form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">Contact No. <span class="required">*</span>
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="contact" class="form-control col-md-7 col-xs-12" data-validate-length-range="3,3,7" data-validate-words="3" name="name" placeholder="e.g +98 999 1234567" required="required" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="item form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="website">Website URL <span class="required">*</span>
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input type="url" id="website" name="website" required="required" placeholder="www.website.com" class="form-control col-md-7 col-xs-12">
+                                                    </div>
+                                                </div>
+                                                <div class="item form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="occupation">Occupation <span class="required">*</span>
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="occupation" type="text" name="occupation" data-validate-length-range="5,20" class="optional form-control col-md-7 col-xs-12">
+                                                    </div>
+                                                </div>
+                                                <div class="item form-group">
+                                                    <label for="password" class="control-label col-md-3">Password</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="password" type="password" name="password" data-validate-length="6,8" class="form-control col-md-7 col-xs-12" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="item form-group">
+                                                    <label for="password2" class="control-label col-md-3 col-sm-3 col-xs-12">Repeat Password</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="password2" type="password" name="password2" data-validate-linked="password" class="form-control col-md-7 col-xs-12" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="item form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="textarea">Description <span class="required">*</span>
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <textarea id="textarea" required="required" name="textarea" class="form-control col-md-7 col-xs-12"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="ln_solid"></div>
+                                                <div class="form-group">
+                                                    <div class="col-md-6 col-md-offset-3">
+                                                        <button type="submit" class="btn btn-primary">Cancel</button>
+                                                        <button id="send" type="submit" class="btn btn-success">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        <!-- end edit form -->
                                     </div>
                                 </div>
                             </div>
-                        <!-- end of network activities -->
-                    </div>
-
-                    <br/>
-
-                    <div class="row top_tiles" style="margin: 10px 0;">
-                        <div class="col-md-3 col-sm-3 col-xs-6 tile">
-                            <span>Total Visits</span>
-                            <h2>231,809</h2>
-                            <span class="sparkline_one" style="height: 160px;">
-                                <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
-                            </span>
-                        </div>
-                        <div class="col-md-3 col-sm-3 col-xs-6 tile">
-                            <span>Total Revenue</span>
-                            <h2>$ 231,809</h2>
-                            <span class="sparkline_one" style="height: 160px;">
-                                <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
-                            </span>
-                        </div>
-                        <div class="col-md-3 col-sm-3 col-xs-6 tile">
-                            <span>Total Sessions</span>
-                            <h2>231,809</h2>
-                            <span class="sparkline_two" style="height: 160px;">
-                                <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
-                            </span>
-                        </div>
-                        <div class="col-md-3 col-sm-3 col-xs-6 tile">
-                            <span>Total Sessions</span>
-                            <h2>231,809</h2>
-                            <span class="sparkline_one" style="height: 160px;">
-                                <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
-                            </span>
                         </div>
                     </div>
+                    
+                    <!-- footer content -->
+                        <br><br><br>
+                        <footer>
+                            <div class="">
+                                <p class="pull-right">
+                                    <span class="lead"> <i class="fa fa-users"></i> Cross Device Tracking</span>
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </footer>
+                    <!-- /footer content -->
                 </div>
-
-                <!-- footer content -->
-                    <footer>
-                        <div class="">
-                            <p class="pull-right">
-                                <span class="lead"> <i class="fa fa-users"></i> Cross Device Tracking</span>
-                            </p>
-                        </div>
-                        <div class="clearfix"></div>
-                    </footer>
-                <!-- /footer content -->
-
-            </div>
             <!-- /page content -->
         </div>
     </div>
