@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cross Device Tracking</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <!-- Custom styling plus plugins -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/maps/jquery-jvectormap-2.0.3.css" />
+    <link href="css/icheck/flat/green.css" rel="stylesheet" />
+    <link href="css/floatexamples.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/nprogress.js"></script>
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <!-- sidebar -->
+                <div class="col-md-3 left_col">
+                    <div class="left_col scroll-view">
+
+                        <!-- sidebar title -->
+                            <div class="navbar nav_title" style="border: 0;">
+                                <a class="site_title"><i class="fa fa-users"></i> <span>Cross Device Tracking</span></a>
+                            </div>
+                            <div class="clearfix"></div>
+                            <br />
+                        <!-- /sidebar title -->
+
+                        <!-- sidebar menu -->
+                            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+
+                                <div class="menu_section">
+                                    <ul class="nav side-menu">
+                                        <li><a><i class="fa fa-home" ></i> Dashboard <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="index.html">Home</a>
+                                                </li>
+                                                <li><a href="quick_reports.html">Quick Reports</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a><i class="fa fa-bar-chart-o" ></i> Reports <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="visitor_statistics.html">Visitor Statistics</a>
+                                                </li>
+                                                <li><a href="webapp_statistics.html">Website / Mobile App Statistics</a>
+                                                </li>
+                                                <li><a href="device_properties.html">Device Properties</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a><i class="fa fa-table"></i> Data <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="upload_data.html">Upload Data</a>
+                                                </li>
+                                                <li><a href="collect_online.html">Collect Online</a>
+                                                </li>
+                                                <li><a href="description.html">Description</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a><i class="fa fa-table"></i> Profile <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="profile.html">Personal Info</a>
+                                                </li>
+                                                <li><a href="account_setting.html">Account Setting</a>
+                                                </li>
+                                                <li><a href="notification_setting.html">Notification Setting</a>
+                                                </li>
+                                                <li><a href="membership_plan.html">Membership Plan</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a><i class="fa fa-laptop"></i> Support <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="tutorial.html">Tutorial</a>
+                                                </li>
+                                                <li><a href="plugin.html">Plugin</a>
+                                                </li>
+                                                <li><a href="faqs.html">FAQ'S</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <!-- /sidebar menu -->
+
+                        <!-- /menu footer buttons -->
+                            <div class="sidebar-footer hidden-small">
+                                <a data-toggle="tooltip" data-placement="top" title="Settings">
+                                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                                    <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" title="Lock">
+                                    <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" title="Logout">
+                                    <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                        <!-- /menu footer buttons -->
+                    </div>
+                </div>
+            <!-- /sidebar -->
+
+            <!-- top navigation -->
+                <div class="top_nav">
+
+                    <div class="nav_menu">
+                        <nav class="" role="navigation">
+                            <div class="nav toggle">
+                                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                            </div>
+
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="">
+                                    <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <img src="images/img.jpg" alt="">John Doe
+                                        <span class=" fa fa-angle-down"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+                                        <li><a href="profile.html">  Profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span>Settings</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">Help</a>
+                                        </li>
+                                        <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            <!-- /top navigation -->
+
+            <!-- page content -->
+            <div class="right_col" role="main">
+
+                <div class="">
+                    <div class="page-title">
+                        <div class="title_left">
+                            <h3>Form Wizards</h3>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="x_panel">
+                                <div class="x_content">
+                                    <!-- SmartWizard Content -->
+                                        <p>Navigate though the wizard by providing the required details/data:</p>
+                                        <div id="wizard" class="form_wizard wizard_horizontal">
+                                            <ul class="wizard_steps">
+                                                <li>
+                                                    <a href="#step-1">
+                                                        <span class="step_no">1</span>
+                                                        <span class="step_descr">
+                                                            Step 1<br />
+                                                            <small>Details</small>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#step-2">
+                                                        <span class="step_no">2</span>
+                                                        <span class="step_descr">
+                                                            Step 2<br />
+                                                            <small>Upload</small>
+                                                        </span> 
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#step-3">
+                                                        <span class="step_no">3</span>
+                                                        <span class="step_descr">
+                                                            Step 3<br />
+                                                            <small>Describe</small>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#step-4">
+                                                        <span class="step_no">4</span>
+                                                        <span class="step_descr">
+                                                            Step 4<br />
+                                                            <small>Finalize</small>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            
+                                            <div id="step-1">
+                                                <h2 class="StepTitle">Enter details of data:</h2>
+                                                <form class="form-horizontal form-label-left">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">File Name <span class="required"></span>
+                                                        </label>
+                                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                                            <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                                                        </div>
+                                                    </div>
+                                                    <div class="item form-group">
+                                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">Size (in GB) <span class="required"></span>
+                                                        </label>
+                                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                                            <input type="number" id="number" name="number" required="required" data-validate-minmax="10,100" class="form-control col-md-7 col-xs-12">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">File Type</label>
+                                                        <div class="col-md-6 col-sm-6 col-xs-12" placeholder="FILE TYPE">
+                                                            <select class="form-control">
+                                                                <option>.XLS</option>
+                                                                <option>.CSV</option>
+                                                                <option>.TSV</option>
+                                                                <option>.RAR</option>
+                                                                <option>Others</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div id="step-2">
+                                                <h2 class="StepTitle">Upload data files: <small>(Darg and drop files in the area below)</small></h2>
+                                                <form action="choices/form_upload.html" class="dropzone" style="border: 1px solid #e5e5e5; height: 200px; "></form>
+                                            </div>
+
+                                            <div id="step-3">
+                                                <h2 class="StepTitle">Enter brief description of data <br><small>(regarding assosiation different data tables)</small>:</h2>
+                                                <form class="form-horizontal form-label-left">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="description">Description <span class="required"></span>
+                                                        </label>
+                                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                                            <textarea id="textarea" required="required" name="textarea" class="form-control col-md-7 col-xs-12"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div id="step-4">
+                                                <h2 class="StepTitle">Terms & Conditions</h2>
+                                                <p>Welcome to our website. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern [business name]'s relationship with you in relation to this website. If you disagree with any part of these terms and conditions, please do not use our website.
+                                                
+                                                The term '[business name]' or 'us' or 'we' refers to the owner of the website whose registered office is [address]. Our company registration number is [company registration number and place of registration]. The term 'you' refers to the user or viewer of our website.
+
+                                                The use of this website is subject to the following terms of use:
+
+                                                <ul>
+                                                    <li>The content of the pages of this website is for your general information and use only. It is subject to change without notice.</li>
+                                                    <li>This website uses cookies to monitor browsing preferences. If you do allow cookies to be used, the following personal information may be stored by us for use by third parties: [insert list of information].</li>
+                                                    <li>Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.</li>
+                                                    <li>Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this website meet your specific requirements.</li>
+                                                    <li>This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.</li>
+                                                    <li>All trade marks reproduced in this website which are not the property of, or licensed to, the operator are acknowledged on the website.</li>
+                                                    <li>Unauthorised use of this website may give rise to a claim for damages and/or be a criminal offence.</li>
+                                                    <li>From time to time this website may also include links to other websites. These links are provided for your convenience to provide further information. They do not signify that we endorse the website(s). We have no responsibility for the content of the linked website(s).</li>
+                                                    <li>Your use of this website and any dispute arising out of such use of the website is subject to the laws of Pakistan.</li>
+                                                </ul>
+                                                </p>
+                                                <form class="form-horizontal form-label-left">
+                                                    <div class="form-group">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" value=""> I have read and agree all Terms & Conditions.
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    <!-- SmartWizard Content -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- footer content -->
+                    <br><br><br>
+                    <footer>
+                        <div class="">
+                            <p class="pull-right">
+                                <span class="lead"> <i class="fa fa-users"></i> Cross Device Tracking</span>
+                            </p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </footer>
+                <!-- /footer content -->
+            </div>
+            <!-- /page content -->
+        </div>
+    </div>
+
+    <!-- page end -->
+        <div id="custom_notifications" class="custom-notifications dsp_none">
+            <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+            </ul>
+            <div class="clearfix"></div>
+            <div id="notif-group" class="tabbed_notifications"></div>
+        </div>
+    <!-- /page end -->
+    
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- chart js -->
+    <script src="js/chartjs/chart.min.js"></script>
+    <!-- bootstrap progress js -->
+    <script src="js/progressbar/bootstrap-progressbar.min.js"></script>
+    <script src="js/nicescroll/jquery.nicescroll.min.js"></script>
+    <!-- icheck -->
+    <script src="js/icheck/icheck.min.js"></script>
+
+    <script src="js/custom.js"></script>
+    <!-- form wizard -->
+    <script type="text/javascript" src="js/wizard/jquery.smartWizard.js"></script>
+    <!-- pace -->
+    <script src="js/pace/pace.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Smart Wizard     
+            $('#wizard').smartWizard();
+
+            function onFinishCallback() {
+                $('#wizard').smartWizard('showMessage', 'Finish Clicked');
+                //alert('Finish Clicked');
+            }
+        });
+
+        $(document).ready(function () {
+            // Smart Wizard 
+            $('#wizard_verticle').smartWizard({
+                transitionEffect: 'slide'
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

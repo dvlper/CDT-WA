@@ -1,4 +1,175 @@
-<!-- JAVASCRIPTS -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cross Device Tracking</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <!-- Custom styling plus plugins -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/maps/jquery-jvectormap-2.0.3.css" />
+    <link href="css/icheck/flat/green.css" rel="stylesheet" />
+    <link href="css/floatexamples.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/nprogress.js"></script>
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <!-- sidebar -->
+                <div class="col-md-3 left_col">
+                    <div class="left_col scroll-view">
+
+                        <!-- sidebar title -->
+                            <div class="navbar nav_title" style="border: 0;">
+                                <a class="site_title"><i class="fa fa-users"></i> <span>Cross Device Tracking</span></a>
+                            </div>
+                            <div class="clearfix"></div>
+                            <br />
+                        <!-- /sidebar title -->
+
+                        <!-- sidebar menu -->
+                            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+
+                                <div class="menu_section">
+                                    <ul class="nav side-menu">
+                                        <li><a><i class="fa fa-home" ></i> Dashboard <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="index.html">Home</a>
+                                                </li>
+                                                <li><a href="quick_reports.html">Quick Reports</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a><i class="fa fa-bar-chart-o" ></i> Reports <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="visitor_statistics.html">Visitor Statistics</a>
+                                                </li>
+                                                <li><a href="webapp_statistics.html">Website / Mobile App Statistics</a>
+                                                </li>
+                                                <li><a href="device_properties.html">Device Properties</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a><i class="fa fa-table"></i> Data <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="upload_data.html">Upload Data</a>
+                                                </li>
+                                                <li><a href="collect_online.html">Collect Online</a>
+                                                </li>
+                                                <li><a href="description.html">Description</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a><i class="fa fa-table"></i> Profile <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="profile.html">Personal Info</a>
+                                                </li>
+                                                <li><a href="account_setting.html">Account Setting</a>
+                                                </li>
+                                                <li><a href="notification_setting.html">Notification Setting</a>
+                                                </li>
+                                                <li><a href="membership_plan.html">Membership Plan</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a><i class="fa fa-laptop"></i> Support <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="tutorial.html">Tutorial</a>
+                                                </li>
+                                                <li><a href="plugin.html">Plugin</a>
+                                                </li>
+                                                <li><a href="faqs.html">FAQ'S</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <!-- /sidebar menu -->
+
+                        <!-- /menu footer buttons -->
+                            <div class="sidebar-footer hidden-small">
+                                <a data-toggle="tooltip" data-placement="top" title="Settings">
+                                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                                    <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" title="Lock">
+                                    <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" title="Logout">
+                                    <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                        <!-- /menu footer buttons -->
+                    </div>
+                </div>
+            <!-- /sidebar -->
+
+            <!-- top navigation -->
+                <div class="top_nav">
+
+                    <div class="nav_menu">
+                        <nav class="" role="navigation">
+                            <div class="nav toggle">
+                                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                            </div>
+
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="">
+                                    <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <img src="images/img.jpg" alt="">John Doe
+                                        <span class=" fa fa-angle-down"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+                                        <li><a href="profile.html">  Profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span>Settings</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">Help</a>
+                                        </li>
+                                        <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            <!-- /top navigation -->
+
+            <!-- page content -->
+            <!-- /page content -->
+        </div>
+    </div>
+
+    <!-- page end -->
+        <div id="custom_notifications" class="custom-notifications dsp_none">
+            <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+            </ul>
+            <div class="clearfix"></div>
+            <div id="notif-group" class="tabbed_notifications"></div>
+        </div>
+    <!-- /page end -->
+
+    <!-- JAVASCRIPTS -->
         
         <!-- bootstrap -->
             <script src="js/bootstrap.min.js"></script>
@@ -17,17 +188,13 @@
             <script type="text/javascript" src="js/gauge/gauge.min.js"></script>
             <script type="text/javascript" src="js/gauge/gauge_demo.js"></script>
         
-        <!-- daterangepicker -->
-            <script type="text/javascript" src="js/moment.min2.js"></script>
-            <script type="text/javascript" src="js/datepicker/daterangepicker.js"></script>
-        
         <!-- sparkline -->
             <script src="js/sparkline/jquery.sparkline.min.js"></script>
 
         <!-- custom -->
             <script src="js/custom.js"></script>
         
-        <!-- skycons -->
+        <!-- skycons (for weather widget)--> 
             <script src="js/skycons/skycons.min.js"></script>
 
         <!-- flot js -->
@@ -75,7 +242,7 @@
                     }
                 };
                 var plot = $.plot($("#placeholder3xx3"), [{
-                    label: "Registrations",
+                    label: "Visits",
                     data: d1,
                     lines: {
                         fillColor: "rgba(150, 202, 89, 0.12)"
@@ -139,7 +306,7 @@
 
                 })
             </script>
-        <!-- -->
+        <!--  -->
 
         <!-- datepicker -->
             <script type="text/javascript">
@@ -214,51 +381,11 @@
                     });
                 });
             </script>
-        <!-- /datepicker -->
 
         <!-- moris js -->
             <script src="js/moris/raphael-min.js"></script>
             <script src="js/moris/morris.js"></script>
-            <script>
-                $(function () {
-                    var day_data = [
-                        {
-                            "period": "Jan",
-                            "Hours worked": 80
-                        },
-                        {
-                            "period": "Feb",
-                            "Hours worked": 125
-                        },
-                        {
-                            "period": "Mar",
-                            "Hours worked": 176
-                        },
-                        {
-                            "period": "Apr",
-                            "Hours worked": 224
-                        },
-                        {
-                            "period": "May",
-                            "Hours worked": 265
-                        },
-                        {
-                            "period": "Jun",
-                            "Hours worked": 314
-                        }
-                ];
-                    Morris.Bar({
-                        element: 'graph_bar',
-                        data: day_data,
-                        hideHover: 'always',
-                        xkey: 'period',
-                        barColors: ['#26B99A', '#34495E', '#ACADAC', '#3498DB'],
-                        ykeys: ['Hours worked', 'sorned'],
-                        labels: ['Hours worked', 'SORN'],
-                        xLabelAngle: 60
-                    });
-                });
-            </script>
+            <script src="js/moris/example.js"></script>
         
         <!-- skycons -->
             <script>
@@ -302,3 +429,6 @@
                 gauge.setTextField(document.getElementById("gauge-text2"));
             </script>
     <!-- /JAVASCRIPTS -->
+</body>
+
+</html>

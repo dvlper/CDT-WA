@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cross Device Tracking</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <!-- Custom styling plus plugins -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/maps/jquery-jvectormap-2.0.3.css" />
+    <link href="css/icheck/flat/green.css" rel="stylesheet" />
+    <link href="css/floatexamples.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/nprogress.js"></script>
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <!-- sidebar -->
+                <div class="col-md-3 left_col">
+                    <div class="left_col scroll-view">
+
+                        <!-- sidebar title -->
+                            <div class="navbar nav_title" style="border: 0;">
+                                <a class="site_title"><i class="fa fa-users"></i> <span>Cross Device Tracking</span></a>
+                            </div>
+                            <div class="clearfix"></div>
+                            <br />
+                        <!-- /sidebar title -->
+
+                        <!-- sidebar menu -->
+                            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+
+                                <div class="menu_section">
+                                    <ul class="nav side-menu">
+                                        <li><a><i class="fa fa-home" ></i> Dashboard <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="index.html">Home</a>
+                                                </li>
+                                                <li><a href="quick_reports.html">Quick Reports</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a><i class="fa fa-bar-chart-o" ></i> Reports <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="visitor_statistics.html">Visitor Statistics</a>
+                                                </li>
+                                                <li><a href="webapp_statistics.html">Website / Mobile App Statistics</a>
+                                                </li>
+                                                <li><a href="device_properties.html">Device Properties</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a><i class="fa fa-table"></i> Data <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="upload_data.html">Upload Data</a>
+                                                </li>
+                                                <li><a href="collect_online.html">Collect Online</a>
+                                                </li>
+                                                <li><a href="description.html">Description</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a><i class="fa fa-table"></i> Profile <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="profile.html">Personal Info</a>
+                                                </li>
+                                                <li><a href="account_setting.html">Account Setting</a>
+                                                </li>
+                                                <li><a href="notification_setting.html">Notification Setting</a>
+                                                </li>
+                                                <li><a href="membership_plan.html">Membership Plan</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a><i class="fa fa-laptop"></i> Support <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="tutorial.html">Tutorial</a>
+                                                </li>
+                                                <li><a href="plugin.html">Plugin</a>
+                                                </li>
+                                                <li><a href="faqs.html">FAQ'S</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <!-- /sidebar menu -->
+
+                        <!-- /menu footer buttons -->
+                            <div class="sidebar-footer hidden-small">
+                                <a data-toggle="tooltip" data-placement="top" title="Settings">
+                                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                                    <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" title="Lock">
+                                    <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" title="Logout">
+                                    <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                        <!-- /menu footer buttons -->
+                    </div>
+                </div>
+            <!-- /sidebar -->
+
+            <!-- top navigation -->
+                <div class="top_nav">
+
+                    <div class="nav_menu">
+                        <nav class="" role="navigation">
+                            <div class="nav toggle">
+                                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                            </div>
+
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="">
+                                    <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <img src="images/img.jpg" alt="">John Doe
+                                        <span class=" fa fa-angle-down"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+                                        <li><a href="profile.html">  Profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span>Settings</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">Help</a>
+                                        </li>
+                                        <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            <!-- /top navigation -->
+
+            <!-- page content -->
+                <div class="right_col" role="main">
+                    <div class="">
+                        <div class="page-title">
+                            <div class="title_left">
+                                <h3>Membership Plan</h3>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="x_panel" style="height:600px;">
+                                    <div class="x_content">
+                                        <div class="row">
+                                            <div class="col-md-12">
+
+                                                <!-- price element -->
+                                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                                        <div class="pricing">
+                                                            <div class="title">
+                                                                <h2>Monthly</h2>
+                                                                <h1>$50</h1>
+                                                            </div>
+                                                            <div class="x_content">
+                                                                <div class="">
+                                                                    <div class="pricing_features">
+                                                                        <ul class="list-unstyled text-left">
+                                                                            <li><i class="fa fa-check text-success"></i> 1 month access <strong> to limited services</strong></li>
+                                                                            <li><i class="fa fa-check text-success"></i> <strong>10 GB</strong> data storage</li>
+                                                                            <li><i class="fa fa-check text-success"></i> <strong>Limited reporting</strong></li>
+                                                                            <li><i class="fa fa-check text-success"></i> Free <strong> updates</strong></li>
+                                                                            <li><i class="fa fa-check text-success"></i> <strong> 25 training times </strong></li>
+                                                                            <br>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pricing_footer">
+                                                                    <a href="javascript:void(0);" class="btn btn-success btn-block" role="button">Subscribe </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>   
+                                                <!-- price element -->
+
+                                                <!-- price element -->
+                                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                                        <div class="pricing">
+                                                            <div class="title">
+                                                                <h2>Quaterly</h2>
+                                                                <h1>$135</h1>
+                                                            </div>
+                                                            <div class="x_content">
+                                                                <div class="">
+                                                                    <div class="pricing_features">
+                                                                        <ul class="list-unstyled text-left">
+                                                                            <li><i class="fa fa-check text-success"></i> 3 month access <strong> to limited services</strong></li>
+                                                                            <li><i class="fa fa-check text-success"></i> <strong>45 GB</strong> data storage</li>
+                                                                            <li><i class="fa fa-check text-success"></i> <strong>Unlimited reporting facility</strong></li>
+                                                                            <li><i class="fa fa-check text-success"></i> Free and fast <strong> updates</strong></li>
+                                                                            <li><i class="fa fa-check text-success"></i> <strong> 100 training times </strong></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pricing_footer">
+                                                                    <a href="javascript:void(0);" class="btn btn-success btn-block" role="button">Subscribe </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>   
+                                                <!-- price element -->
+
+                                                <!-- price element -->
+                                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                                        <div class="pricing ui-ribbon-container">
+                                                            <div class="ui-ribbon-wrapper">
+                                                                <div class="ui-ribbon">
+                                                                    30% Off
+                                                                </div>
+                                                            </div>
+                                                            <div class="title">
+                                                                <h2>Bi-Annually</h2>
+                                                                <h1>$270</h1>
+                                                            </div>
+                                                            <div class="x_content">
+                                                                <div class="">
+                                                                    <div class="pricing_features">
+                                                                        <ul class="list-unstyled text-left">
+                                                                            <li><i class="fa fa-check text-success"></i> 6 month access <strong> to limited services</strong></li>
+                                                                            <li><i class="fa fa-check text-success"></i> <strong>75 GB</strong> data storage</li>
+                                                                            <li><i class="fa fa-check text-success"></i> <strong>Unlimited reporting facility</strong></li>
+                                                                            <li><i class="fa fa-check text-success"></i> Free and fast <strong> updates</strong></li>
+                                                                            <li><i class="fa fa-check text-success"></i> <strong> Unlimited training times </strong></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pricing_footer">
+                                                                    <a href="javascript:void(0);" class="btn btn-success btn-block" role="button">Subscribe </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>   
+                                                <!-- price element -->
+
+                                                <!-- price element -->
+                                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                                        <div class="pricing">
+                                                            <div class="title">
+                                                                <h2>Annually</h2>
+                                                                <h1>$525</h1>
+                                                            </div>
+                                                            <div class="x_content">
+                                                                <div class="">
+                                                                    <div class="pricing_features">
+                                                                        <ul class="list-unstyled text-left">
+                                                                            <li><i class="fa fa-check text-success"></i> 12 month access <strong> to limited services</strong></li>
+                                                                            <li><i class="fa fa-check text-success"></i> <strong>150 GB</strong> data storage</li>
+                                                                            <li><i class="fa fa-check text-success"></i> <strong>Unlimited reporting facility</strong></li>
+                                                                            <li><i class="fa fa-check text-success"></i> Free and fast <strong> updates</strong></li>
+                                                                            <li><i class="fa fa-check text-success"></i> <strong> Unlimited training times </strong></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pricing_footer">
+                                                                    <a href="javascript:void(0);" class="btn btn-success btn-block" role="button">Subscribe </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>   
+                                                <!-- price element -->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- footer content -->
+                        <footer>
+                            <div class="">
+                                <p class="pull-right">Gentelella Alela! a Bootstrap 3 template by <a>Kimlabs</a>. |
+                                    <span class="lead"> <i class="fa fa-paw"></i> Gentelella Alela!</span>
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </footer>
+                    <!-- /footer content -->
+                </div>
+            <!-- /page content -->
+        </div>
+    </div>
+
+    <!-- page end -->
+        <div id="custom_notifications" class="custom-notifications dsp_none">
+            <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+            </ul>
+            <div class="clearfix"></div>
+            <div id="notif-group" class="tabbed_notifications"></div>
+        </div>
+    <!-- /page end -->
+
+    <!-- JAVASCRIPTS -->
+        
+        <!-- bootstrap -->
+            <script src="js/bootstrap.min.js"></script>
+
+        <!-- chart js -->
+            <script src="js/chartjs/chart.min.js"></script>
+        
+        <!-- bootstrap progress js -->
+            <script src="js/progressbar/bootstrap-progressbar.min.js"></script>
+            <script src="js/nicescroll/jquery.nicescroll.min.js"></script>
+        
+        <!-- icheck -->
+            <script src="js/icheck/icheck.min.js"></script>
+        
+        <!-- gauge js -->
+            <script type="text/javascript" src="js/gauge/gauge.min.js"></script>
+            <script type="text/javascript" src="js/gauge/gauge_demo.js"></script>
+        
+        <!-- sparkline -->
+            <script src="js/sparkline/jquery.sparkline.min.js"></script>
+
+        <!-- custom -->
+            <script src="js/custom.js"></script>
+        
+        <!-- skycons (for weather widget)--> 
+            <script src="js/skycons/skycons.min.js"></script>
+
+        <!-- flot js -->
+            <script type="text/javascript" src="js/flot/jquery.flot.js"></script>
+            <script type="text/javascript" src="js/flot/jquery.flot.pie.js"></script>
+            <script type="text/javascript" src="js/flot/jquery.flot.orderBars.js"></script>
+            <script type="text/javascript" src="js/flot/jquery.flot.time.min.js"></script>
+            <script type="text/javascript" src="js/flot/date.js"></script>
+            <script type="text/javascript" src="js/flot/jquery.flot.spline.js"></script>
+            <script type="text/javascript" src="js/flot/jquery.flot.stack.js"></script>
+            <script type="text/javascript" src="js/flot/curvedLines.js"></script>
+            <script type="text/javascript" src="js/flot/jquery.flot.resize.js"></script>
+        
+        <!-- pace -->
+            <script src="js/pace/pace.min.js"></script>
+    
+        <!-- flot -->
+            <script>
+                //random data
+                var d1 = [
+                [0, 1], [1, 9], [2, 6], [3, 10], [4, 5], [5, 17], [6, 6], [7, 10], [8, 7], [9, 11], [10, 35], [11, 9], [12, 12], [13, 5], [14, 3], [15, 4], [16, 9]
+                ];
+
+                //flot options
+                var options = {
+                    series: {
+                        curvedLines: {
+                            apply: true,
+                            active: true,
+                            monotonicFit: true
+                        }
+                    },
+                    colors: ["#26B99A"],
+                    grid: {
+                        borderWidth: {
+                            top: 0,
+                            right: 0,
+                            bottom: 1,
+                            left: 1
+                        },
+                        borderColor: {
+                            bottom: "#7F8790",
+                            left: "#7F8790"
+                        }
+                    }
+                };
+                var plot = $.plot($("#placeholder3xx3"), [{
+                    label: "Visits",
+                    data: d1,
+                    lines: {
+                        fillColor: "rgba(150, 202, 89, 0.12)"
+                    }, //#96CA59 rgba(150, 202, 89, 0.42)
+                    points: {
+                        fillColor: "#fff"
+                    }
+                        }], options);
+            </script>
+        <!-- /flot -->
+        
+        <!--  -->
+            <script>
+                $('document').ready(function () {
+                    $(".sparkline_one").sparkline([2, 4, 3, 4, 5, 4, 5, 4, 3, 4, 5, 6, 7, 5, 4, 3, 5, 6], {
+                        type: 'bar',
+                        height: '40',
+                        barWidth: 9,
+                        colorMap: {
+                            '7': '#a1a1a1'
+                        },
+                        barSpacing: 2,
+                        barColor: '#26B99A'
+                    });
+
+                    $(".sparkline_two").sparkline([2, 4, 3, 4, 5, 4, 5, 4, 3, 4, 5, 6, 7, 5, 4, 3, 5, 6], {
+                        type: 'line',
+                        width: '200',
+                        height: '40',
+                        lineColor: '#26B99A',
+                        fillColor: 'rgba(223, 223, 223, 0.57)',
+                        lineWidth: 2,
+                        spotColor: '#26B99A',
+                        minSpotColor: '#26B99A'
+                    });
+
+                    var doughnutData = [
+                        {
+                            value: 30,
+                            color: "#455C73"
+                        },
+                        {
+                            value: 30,
+                            color: "#9B59B6"
+                        },
+                        {
+                            value: 60,
+                            color: "#BDC3C7"
+                        },
+                        {
+                            value: 100,
+                            color: "#26B99A"
+                        },
+                        {
+                            value: 120,
+                            color: "#3498DB"
+                        }
+                ];
+                    var myDoughnut = new Chart(document.getElementById("canvas1").getContext("2d")).Doughnut(doughnutData);
+
+
+                })
+            </script>
+        <!--  -->
+
+        <!-- datepicker -->
+            <script type="text/javascript">
+                $(document).ready(function () {
+
+                    var cb = function (start, end, label) {
+                        console.log(start.toISOString(), end.toISOString(), label);
+                        $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+                        //alert("Callback has fired: [" + start.format('MMMM D, YYYY') + " to " + end.format('MMMM D, YYYY') + ", label = " + label + "]");
+                    }
+
+                    var optionSet1 = {
+                        startDate: moment().subtract(29, 'days'),
+                        endDate: moment(),
+                        minDate: '01/01/2012',
+                        maxDate: '12/31/2015',
+                        dateLimit: {
+                            days: 60
+                        },
+                        showDropdowns: true,
+                        showWeekNumbers: true,
+                        timePicker: false,
+                        timePickerIncrement: 1,
+                        timePicker12Hour: true,
+                        ranges: {
+                            'Today': [moment(), moment()],
+                            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                            'This Month': [moment().startOf('month'), moment().endOf('month')],
+                            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                        },
+                        opens: 'left',
+                        buttonClasses: ['btn btn-default'],
+                        applyClass: 'btn-small btn-primary',
+                        cancelClass: 'btn-small',
+                        format: 'MM/DD/YYYY',
+                        separator: ' to ',
+                        locale: {
+                            applyLabel: 'Submit',
+                            cancelLabel: 'Clear',
+                            fromLabel: 'From',
+                            toLabel: 'To',
+                            customRangeLabel: 'Custom',
+                            daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+                            monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                            firstDay: 1
+                        }
+                    };
+                    $('#reportrange span').html(moment().subtract(29, 'days').format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
+                    $('#reportrange').daterangepicker(optionSet1, cb);
+                    $('#reportrange').on('show.daterangepicker', function () {
+                        console.log("show event fired");
+                    });
+                    $('#reportrange').on('hide.daterangepicker', function () {
+                        console.log("hide event fired");
+                    });
+                    $('#reportrange').on('apply.daterangepicker', function (ev, picker) {
+                        console.log("apply event fired, start/end dates are " + picker.startDate.format('MMMM D, YYYY') + " to " + picker.endDate.format('MMMM D, YYYY'));
+                    });
+                    $('#reportrange').on('cancel.daterangepicker', function (ev, picker) {
+                        console.log("cancel event fired");
+                    });
+                    $('#options1').click(function () {
+                        $('#reportrange').data('daterangepicker').setOptions(optionSet1, cb);
+                    });
+                    $('#options2').click(function () {
+                        $('#reportrange').data('daterangepicker').setOptions(optionSet2, cb);
+                    });
+                    $('#destroy').click(function () {
+                        $('#reportrange').data('daterangepicker').remove();
+                    });
+                });
+            </script>
+
+        <!-- moris js -->
+            <script src="js/moris/raphael-min.js"></script>
+            <script src="js/moris/morris.js"></script>
+            <script src="js/moris/example.js"></script>
+        
+        <!-- skycons -->
+            <script>
+                var icons = new Skycons({
+                        "color": "#73879C"
+                    }),
+                    list = [
+                        "clear-day", "clear-night", "partly-cloudy-day",
+                        "partly-cloudy-night", "cloudy", "rain", "sleet", "snow", "wind",
+                        "fog"
+                    ],
+                    i;
+
+                for (i = list.length; i--;)
+                    icons.set(list[i], list[i]);
+
+                icons.play();
+            </script>
+            <script>
+            
+                var opts = {
+                    lines: 12, // The number of lines to draw
+                    angle: 0, // The length of each line
+                    lineWidth: 0.4, // The line thickness
+                    pointer: {
+                        length: 0.75, // The radius of the inner circle
+                        strokeWidth: 0.042, // The rotation offset
+                        color: '#1D212A' // Fill color
+                    },
+                    limitMax: 'false', // If true, the pointer will not go past the end of the gauge
+                    colorStart: '#1ABC9C', // Colors
+                    colorStop: '#1ABC9C', // just experiment with them
+                    strokeColor: '#F0F3F3', // to see which ones work best for you
+                    generateGradient: true
+                };
+                var target = document.getElementById('foo2'); // your canvas element
+                var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
+                gauge.maxValue = 5000; // set max gauge value
+                gauge.animationSpeed = 32; // set animation speed (32 is default value)
+                gauge.set(3200); // set actual value
+                gauge.setTextField(document.getElementById("gauge-text2"));
+            </script>
+    <!-- /JAVASCRIPTS -->
+</body>
+
+</html>

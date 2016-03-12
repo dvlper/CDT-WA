@@ -33,42 +33,76 @@
 
                         <!-- sidebar title -->
                             <div class="navbar nav_title" style="border: 0;">
-                                <a href="index.html" class="site_title"><i class="fa fa-users"></i> <span>Cross Device Tracking</span></a>
+                                <a class="site_title"><i class="fa fa-users"></i> <span>Cross Device Tracking</span></a>
                             </div>
                             <div class="clearfix"></div>
                             <br />
                         <!-- /sidebar title -->
 
                         <!-- sidebar menu -->
-                        <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
 
-                            <div class="menu_section">
-                                <ul class="nav side-menu">
-                                    <li><a><i class="fa fa-home" href="index3.html"></i> Home </a>
-                                    </li>
-                                    <li><a><i class="fa fa-bar-chart-o" ></i> Reports <span class="fa fa-chevron-down"></span></a>
-                                        <ul class="nav child_menu" style="display: none">
-                                            <li><a href="form.html">Visitor Statistics</a>
-                                            </li>
-                                            <li><a href="form_advanced.html">Website / Mobile App Statistics</a>
-                                            </li>
-                                            <li><a href="form_wizards.html">Unique Patterns</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a><i class="fa fa-table"></i> Data <span class="fa fa-chevron-down"></span></a>
-                                        <ul class="nav child_menu" style="display: none">
-                                            <li><a href="form.html">Upload Dataset</a>
-                                            </li>
-                                            <li><a href="form_advanced.html">Collect Online</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a><i class="fa fa-laptop"></i> Support </a>
-                                    </li>
-                                </ul>
+                                <div class="menu_section">
+                                    <ul class="nav side-menu">
+                                        <li><a><i class="fa fa-home" ></i> Dashboard <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="index.html">Home</a>
+                                                </li>
+                                                <li><a href="index.html">Quick Reports</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a><i class="fa fa-bar-chart-o" ></i> Reports <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="form.html">Visitor Statistics</a>
+                                                </li>
+                                                <li><a href="form_advanced.html">Website / Mobile App Statistics</a>
+                                                </li>
+                                                <li><a href="form_wizards.html">Device</a>
+	                                                <ul>
+	                                                	<li><a href="form_wizards.html">Assosiations</a>
+		                                                </li>
+		                                                <li><a href="form_wizards.html">Properties</a>
+		                                                </li>
+	                                                </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a><i class="fa fa-table"></i> Data <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="form.html">Upload Data</a>
+                                                </li>
+                                                <li><a href="form_advanced.html">Collect Online</a>
+                                                </li>
+                                                <li><a href="form_advanced.html">Description</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a><i class="fa fa-table"></i> Profile <span class="fa fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu" style="display: none">
+                                                <li><a href="form.html">Personal Info</a>
+                                                </li>
+                                                <li><a href="form.html">Account Setting</a>
+                                                </li>
+                                                <li><a href="form.html">Notification Setting</a>
+                                                </li>
+                                                <li><a href="form.html">Membership Plan</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a><i class="fa fa-laptop"></i> Support <span class="fa fa-chevron-down"></span></a>
+                                        	<ul class="nav child_menu" style="display: none">
+                                                <li><a href="form.html">Tutorial</a>
+                                                </li>
+                                                <li><a href="form.html">Plugin</a>
+                                                </li>
+                                                <li><a href="form.html">FAQ'S</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
                         <!-- /sidebar menu -->
 
                         <!-- /menu footer buttons -->
@@ -107,11 +141,10 @@
                                         <span class=" fa fa-angle-down"></span>
                                     </a>
                                     <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
-                                        <li><a href="javascript:;">  Profile</a>
+                                        <li><a href="profile.html">  Profile</a>
                                         </li>
                                         <li>
                                             <a href="javascript:;">
-                                                <span class="badge bg-red pull-right">50%</span>
                                                 <span>Settings</span>
                                             </a>
                                         </li>
@@ -203,75 +236,10 @@
             <!-- /top navigation -->
 
             <!-- page content -->
-            <div class="right_col" role="main">
-                <div class="">
-                    <div class="row">
-                        <!-- start of network activities -->
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="dashboard_graph x_panel">
-                                    <div class="row x_title">
-                                        <div class="col-md-6">
-                                            <h3>Web Traffic</h3>
-                                        </div>
-                                    </div>
-                                    <div class="x_content">
-                                        <div class="demo-container" style="height:250px">
-                                            <div id="placeholder3xx3" class="demo-placeholder" style="width: 100%; height:250px;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <!-- end of network activities -->
-                    </div>
-
-                    <br/>
-
-                    <div class="row top_tiles" style="margin: 10px 0;">
-                        <div class="col-md-3 col-sm-3 col-xs-6 tile">
-                            <span>Total Visits</span>
-                            <h2>231,809</h2>
-                            <span class="sparkline_one" style="height: 160px;">
-                                <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
-                            </span>
-                        </div>
-                        <div class="col-md-3 col-sm-3 col-xs-6 tile">
-                            <span>Total Revenue</span>
-                            <h2>$ 231,809</h2>
-                            <span class="sparkline_one" style="height: 160px;">
-                                <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
-                            </span>
-                        </div>
-                        <div class="col-md-3 col-sm-3 col-xs-6 tile">
-                            <span>Total Sessions</span>
-                            <h2>231,809</h2>
-                            <span class="sparkline_two" style="height: 160px;">
-                                <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
-                            </span>
-                        </div>
-                        <div class="col-md-3 col-sm-3 col-xs-6 tile">
-                            <span>Total Sessions</span>
-                            <h2>231,809</h2>
-                            <span class="sparkline_one" style="height: 160px;">
-                                <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- footer content -->
-                    <footer>
-                        <div class="">
-                            <p class="pull-right">
-                                <span class="lead"> <i class="fa fa-users"></i> Cross Device Tracking</span>
-                            </p>
-                        </div>
-                        <div class="clearfix"></div>
-                    </footer>
-                <!-- /footer content -->
-
-            </div>
+            	-- PLCAE CONTENT HERE
             <!-- /page content -->
-        </div>
+
+		</div>
     </div>
 
     <!-- page end -->
